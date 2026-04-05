@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e8ff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contenedor {
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #7e57c2;
+}
+
+h2 {
+    color: #5e548e;
+    margin-top: 20px;
+}
+
+p, li {
+    color: #333;
+}
