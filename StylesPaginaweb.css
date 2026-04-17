@@ -1,11 +1,11 @@
-/*ESTILO GENERAL*/
+/* ESTILO GENERAL */
 body {
   background-color: #210d5c;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
 
-/*NAVBAR*/
+/* NAVBAR */
 .navbar {
   background-color: #060217 !important;
 }
@@ -18,14 +18,14 @@ body {
   color: #7238f8 !important;
 }
 
-/*TÕTULO*/
+/* T√çTULO */
 .titulo-pixel {
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
   color: #cabdff;
 }
 
-/*TÕTULOS*/
+/* T√çTULOS */
 h1, h2 {
   color: white;
 }
@@ -34,7 +34,7 @@ h1 {
   text-shadow: 0 0 10px rgba(114,56,248,0.5);
 }
 
-/*BOT”N*/
+/* BOT√ìN */
 .btn-primary {
   background-color: #7238f8 !important;
   border: none !important;
@@ -44,14 +44,14 @@ h1 {
   background-color: #4d2bd6 !important;
 }
 
-/*CARRUSEL*/
+/* CARRUSEL */
 .carousel-item img {
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-/*CARDS y OBJETIVOS*/
+/* CARDS y OBJETIVOS */
 .objetivo-box {
   background: rgba(56, 189, 248, 0.1);
   border: 1px solid #8561fa;
@@ -75,7 +75,7 @@ h1 {
   box-shadow: 0 10px 25px rgba(114,56,248,0.3);
 }
 
-/*FOOTER*/
+/* FOOTER */
 .footer {
   background: linear-gradient(180deg, #060217, #020618);
   border-top: 2px solid #4b38f8;
