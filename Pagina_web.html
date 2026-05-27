@@ -2,216 +2,91 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mision Code</title>
-  
-  <!-- Bootstrap CSS -->
-  <link href="bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="StylesPaginaweb.css">
-
-  <!-- Fuente Pixel -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión Code — Diagnóstico de Lógica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    body {
-      background-color: #210d5c;
-      color: white;
-    }
-
-    .navbar {
-      background-color: #060217 !important;
-    }
-
-    h1, h2 {
-      color: white;
-    }
-
-    .card {
-      background-color: #5b5285;
-      color: white;
-      border: none;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      transition: 0.3s;
-    }
-    
-    footer {
-      background-color: #020618;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-
-    <!-- Logo -->
-    <a class="navbar-brand titulo-pixel" href="#">Mision Code</a>
-
-    <!-- Botón responsive -->
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Opciones -->
-    <div class="collapse navbar-collapse" id="menu">
+    <a class="navbar-brand titulo-pixel" href="#">Misión Code</a>
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Funciones</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Diagnóstico</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-
+        <li class="nav-item"><a class="nav-link" href="#modulos">Estructura</a></li>
+        <li class="nav-item"><a class="nav-link" href="#documento">Documento</a></li>
       </ul>
-
-      <!-- Botón tipo acción -->
-      <a href="#" class="btn btn-primary ms-3">Iniciar Misión</a>
-
     </div>
   </div>
 </nav>
 
-<!-- BIENVENIDA -->
-<div class="container text-center mt-5">
-  <h1 class="brand">Bienvenido a Mision Code</h1>
-  <p class="lead">Explora, aprende y completa tu proceso de ingreso a Ingeniería de Software</p>
+<div class="hero">
+  <div class="badge-pixel">Proyecto de Gestión del conocimiento</div>
+  <h1>Gamificación en el Diagnóstico<br>Ingeniería de Software</h1>
+  <p>Una experiencia interactiva diseñada para evaluar los conocimientos previos en lógica de programación de los nuevos estudiantes, fortaleciendo la planeación académica.</p>
 </div>
 
-<!-- CARRUSEL -->
-<div id="carouselExampleIndicators" class="carousel slide mt-5">
-  
-  <!-- Indicadores -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+<section id="modulos">
+  <div class="container">
+    <h2>Módulos de la Aplicación</h2>
+    <div class="glow-line"></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5">
+        <div class="feat-box">
+          <h5>Retos de Lógica</h5>
+          <p>Actividades interactivas enfocadas en fortalecer las estructuras de pensamiento computacional fundamentales para el desarrollo de software.</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="feat-box">
+          <h5>Panel Docente</h5>
+          <p>Visualización de métricas y resultados analíticos que permiten a los gestores de conocimiento ajustar sus estrategias pedagógicas según el nivel real del grupo.</p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- Imágenes locales -->
-  <div class="carousel-inner">
+<section id="documento">
+  <div class="container">
+    <h2>Documentación del Proyecto</h2>
+    <div class="glow-line"></div>
+    <div class="articulo-container">
+      <div class="articulo-texto">
+        <h3>Idea de Investigación</h3>
+        <p>El programa de Ingeniería de Software recibe estudiantes con niveles variados de conocimiento. Dado que muchas veces no se cuenta con un diagnostico en el inicio del semestre, resulta difícil identificar las bases reales de lógica de programación en el grupo.</p>
+        
+        <h3>Justificación</h3>
+        <p>Es común que al iniciar el programa existan vacíos en la lógica de programación. Implementar una herramienta gamificada hace que este diagnóstico sea menos tedioso y más participativo, generando datos valiosos para mejorar la planeación académica.</p>
+        
+        <h3>Planteamiento del Problema</h3>
+        <p>Actualmente, los docentes suelen asumir un nivel promedio sin certeza técnica, lo que puede causar que algunos estudiantes avancen con vacíos mientras otros se desmotivan. Se busca cerrar esta brecha mediante un diagnóstico interactivo y estructurado.</p>
+        
+        <div class="pregunta-box">
+          <h4>Pregunta de Investigación:</h4>
+          <p>¿Cómo desarrollar una aplicación gamificada que permita diagnosticar los conocimientos previos de los estudiantes de primer semestre en Ingeniería de Software, facilitando la obtención de información útil para los docentes?</p>
+        </div>
 
-    <div class="carousel-item active">
-      <img src="carrusel_1.jpeg" class="d-block w-100">
+        <div class="text-center mt-4">
+          <a href="Articulo_Mission_Code.pdf" target="_blank" class="btn-pdf">
+            ?? Descargar Artículo Completo
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="carousel-item">
-      <img src="carrusel_2.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="carrusel_3.jpeg" class="d-block w-100">
-    </div>
-
   </div>
+</section>
 
-  <!-- Botones -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
-
-<!-- PRIMERAS CARDS -->
-<div class="container mt-5">
-  <h2 class="text-center mb-4">Funciones de Mision Code</h2>
-
-  <div class="row text-center">
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Asistencia</h5>
-        <p>Registro automático de estudiantes mediante el juego interactivo.</p>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Prueba Diagnóstica</h5>
-        <p>Evaluación inicial de conocimientos en lógica y programación.</p>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Encuestas</h5>
-        <p>Recolección de opiniones para mejorar la experiencia universitaria.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-  
-<!-- OBJETIVOS -->
-<div class="container mt-5">
-  <h2 class="text-center mb-4">Objetivos del Proyecto</h2>
-
-  <div class="row text-center">
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Motivar</h5>
-        <p>Despertar el interés de los estudiantes por la Ingeniería de Software.</p>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Evaluar</h5>
-        <p>Identificar el nivel de conocimientos previos en lógica y programación.</p>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="objetivo-box p-4">
-        <h5>Mejorar</h5>
-        <p>Recolectar información para optimizar la experiencia de acogida.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer mt-5 text-white pt-4 pb-2">
-  <div class="container text-center">
-
-    <p>Proyecto interactivo para la acogida de estudiantes de Ingeniería de Software</p>
-
-    <hr style="border-color: #38bdf8; width: 50%; margin: auto;">
-
-    <p class="mt-3 mb-1">Universidad de Cundinamarca</p>
-    <p class="mb-1">Ingeniería de Software</p>
-
-    <p class="mt-3 small">
-      Lizzeth Bejarano - Valentina Plata
-    </p>
-
+<footer>
+  <div class="container">
+    <p>Misión Code — Sistema de Diagnóstico Estudiantil</p>
+    <p class="nombres">Valentina Plata - Lizzeth Bejarano</p>
+    <p class="universidad">Universidad de Cundinamarca - Seccional Girardot</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
